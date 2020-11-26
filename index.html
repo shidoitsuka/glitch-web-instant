@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brian Harianja</title>
+    <!-- Font Awesome -->
+    <link
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/2.2.1/mdb.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container-fluid background-gradient main-page">
+      <div class="text-container">
+        <div class="main-text">Brian Harianja</div>
+        <div class="sub-text">I do <span id="typed"></span></div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <!-- MDB -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/2.2.1/mdb.min.js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script>
+      $(document).ready(function () {
+        const typingText = new Typed("#typed", {
+          strings: [
+            "front end development",
+            "back end development",
+            "full stack development",
+            "graphic design",
+            "open source project",
+            "photography",
+            "videography",
+            "more and more!",
+          ],
+          typeSpeed: 30,
+          backSpeed: 50,
+          shuffle: true,
+          smartBackspace: true,
+          loop: true,
+        });
+      });
+    </script>
+  </body>
+</html>
